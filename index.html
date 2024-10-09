@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Liveness Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.12/dist/face-api.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Face Liveness Detection</h1>
+        <div class="video-container">
+            <video id="video" width="720" height="560" autoplay muted></video>
+            <canvas id="overlay"></canvas>
+        </div>
+        <div class="controls">
+            <button id="startButton" disabled>Start Detection</button>
+            <button id="stopButton" disabled>Stop Detection</button>
+        </div>
+        <div class="status">
+            <p>Status: <span id="detectionStatus">Loading models...</span></p>
+            <p>Face Type: <span id="faceType">No face detected</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
